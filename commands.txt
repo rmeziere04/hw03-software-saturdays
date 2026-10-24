@@ -30,3 +30,30 @@
    30  ls -lS /usr/bin | head -n 2
    31  cd hw3
    32  history > commands.txt
+   33  nano commands.txt
+   34  ls
+   35  rm twocities.txt
+   36  ls
+   37  clear
+   38  nano twocities_ten_letters.txt
+   39  nano twocities_unique_ten_letters.txt
+   40  nano commands.txt
+   41  git init
+   42  git remote add origin git@github.com:rmeziere04/hw03-software-saturdays.git
+   43  git push -u origin main
+   44  git commit -m "first commit"
+   45  git add commands.txt twocities_ten_letters.txt twocities_unique_ten_letters.txt
+   46  git commit -m "first commit of hw 3"
+   47  git branch -m main
+   48  git push -u origin main
+   49  curl https://twomorecents.org/files/twocities.txt > twocities.txt
+   50  grep -oE '\b[A-Za-z]{10}\b' twocities.txt | head -20 | sort > twocities_ten_letters.txt
+   51  cd twocities_ten_letters.txt
+   52  nano twocities_ten_letters.txt
+   53  man sort
+   54  sort -f twocities_ten_letters.txt | uniq -i
+   55  grep -oE '\b[A-Za-z]{10}\b' twocities.txt | sort -f | uniq -i | head -20 > twocities_unique_ten_letters.txt
+   56* 
+   57  nano twocities_unique_ten_letters.txt
+   58  grep -o "Manette" twocities.txt | wc -l
+   59  history > commands.txt
