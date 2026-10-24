@@ -1,0 +1,32 @@
+    1  ls
+    2  man grep
+    3  man wc
+    4  grep -o "Manette" twocities.txt | wc -l
+    5  grep '\b[a-zA-Z]{10}\b' twocities.txt | head -n 20 | sort > twocities_ten_letters.txt
+    6  nano twocities_ten_letters.txt
+    7  man head
+    8  man grep
+    9  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | head -n 20 | sort > twocities_ten_letters.txt
+   10  nano twocities_ten_letters.txt
+   11  man grep
+   12  man uniq
+   13  twocities_ten_letters.txt | uniq -i
+   14  twocities_ten_letters.txt uniq -i
+   15  sort twocities_ten_letters.txt | uniq -i
+   16  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | unique -i | head -n 20 | sort
+   17  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | uniq -i | head -n 20 | sort
+   18  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | sort | uniq -i | head -n 20
+   19  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | sort | head -n 20
+   20  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | sort | head -n 20 > twocities_ten_letters.txt
+   21  nano twocities_ten_letters.txt
+   22  grep -oE '\b[a-zA-Z]{10}\b' twocities.txt | sort | uniq -i | head -n 20 > twocities_unique_ten_letters.txt
+   23  nano twocities_unique_ten_letters.txt
+   24  cd ..
+   25  ls -l /usr/bin
+   26  ls -l /usr/bin | grep '\d+'
+   27  man ls
+   28  ls -lS /usr/bin
+   29  ls -lS /usr/bin | head -n 1
+   30  ls -lS /usr/bin | head -n 2
+   31  cd hw3
+   32  history > commands.txt
